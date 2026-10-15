@@ -4,6 +4,7 @@ import type { LonLat } from "../core";
 import { AIRPORTS } from "../data/skyway";
 import { BASEMAPS, makeGoogleLayer } from "./basemaps";
 import { flightColor } from "./colors";
+import { fetchAirspace, type AirspaceArea, type AirspaceClass } from "../io/airspace";
 import type { Store } from "./state";
 
 export interface MapHandlers {
@@ -14,9 +15,17 @@ export interface MapHandlers {
   onAreaVertexRemoved(index: number): void;
   onSelectFlight(idx: number): void;
   onBasemapProblem(id: string): void;
+  onAirspaceProblem(): void;
 }
 
 const ll = (p: LonLat): L.LatLngTuple => [p[1], p[0]];
+
+/** Chart convention: B solid blue, C solid magenta, D dashed blue. The dash and the label carry the class, not only the colour. */
+const AIRSPACE_STYLE: Record<AirspaceClass, { color: string; dash?: string }> = {
+  B: { color: "#1c7ed6" },
+  C: { color: "#c2255c" },
+  D: { color: "#1c7ed6", dash: "8 6" },
+};
 
 export class MapView {
   readonly map: L.Map;
@@ -28,7 +37,9 @@ export class MapView {
   private readonly gEdit = L.layerGroup();
   private fitToken = 0;
   private lineRef: LonLat[] | null = null;
-  private overlays = { line: true, nodes: true, ticks: true, zone: true };
+  private overlays = { line: true, nodes: true, airspace: true, ticks: true, zone: true };
+  private airspace: AirspaceArea[] | null = null;
+  private airspaceLoading = false;
 
   constructor(container: HTMLElement, private readonly store: Store, private readonly h: MapHandlers) {
     this.map = L.map(container, { zoomControl: true, preferCanvas: true, maxZoom: 21 });
@@ -42,6 +53,7 @@ export class MapView {
     this.map.on("zoomend", () => this.drawTicks());
     this.drawContext();
     this.drawTicks();
+    void this.loadAirspace();
   }
 
   setBasemap(id: string): void {
@@ -72,8 +84,9 @@ export class MapView {
     return this.baseId;
   }
 
-  setOverlay(name: "line" | "nodes" | "ticks" | "zone", on: boolean): void {
+  setOverlay(name: "line" | "nodes" | "airspace" | "ticks" | "zone", on: boolean): void {
     this.overlays[name] = on;
+    if (name === "airspace" && on) void this.loadAirspace();
     this.drawContext();
     this.drawTicks();
     this.render();
@@ -89,10 +102,35 @@ export class MapView {
     if (this.overlays.line) {
       L.polyline(this.store.state.cfg.line.map(ll), { color: "#ffd43b", weight: 2, opacity: 0.9, dashArray: "6 6", interactive: false }).addTo(this.gContext);
     }
+    if (this.overlays.airspace && this.airspace) {
+      for (const a of this.airspace) {
+        const s = AIRSPACE_STYLE[a.cls];
+        const top = a.topFt != null ? `<br>to ${a.topFt.toLocaleString("en-US")} ft` : "";
+        const poly = L.polygon(a.rings.map((r) => r.map(ll)), { color: s.color, weight: 2, dashArray: s.dash, fillColor: s.color, fillOpacity: 0.07, interactive: false }).addTo(this.gContext);
+        L.marker(poly.getBounds().getCenter(), { interactive: false, keyboard: false, icon: L.divIcon({ className: "airspace-label", html: `${a.ident} · Class ${a.cls}${top}`, iconSize: [0, 0] }) }).addTo(this.gContext);
+      }
+    }
     if (this.overlays.nodes) {
       AIRPORTS.forEach((a) =>
         L.circleMarker([a.lat, a.lon], { radius: 7, color: "#fff", weight: 2, fillColor: "#364fc7", fillOpacity: 1 })
           .bindTooltip(`${a.name} (${a.code}), approximate<br>Check airspace in Aloft / B4UFLY before flying nearby`).addTo(this.gContext));
+    }
+  }
+
+  /** Fetches the FAA outlines once, for the box around the Skyway. */
+  private async loadAirspace(): Promise<void> {
+    if (this.airspace || this.airspaceLoading) return;
+    const line = this.store.state.cfg.line;
+    if (line.length < 2) return;
+    this.airspaceLoading = true;
+    const lons = line.map((p) => p[0]), lats = line.map((p) => p[1]);
+    try {
+      this.airspace = await fetchAirspace({ west: Math.min(...lons) - 0.05, east: Math.max(...lons) + 0.05, south: Math.min(...lats) - 0.05, north: Math.max(...lats) + 0.05 });
+      this.drawContext();
+    } catch {
+      this.h.onAirspaceProblem();
+    } finally {
+      this.airspaceLoading = false;
     }
   }
 

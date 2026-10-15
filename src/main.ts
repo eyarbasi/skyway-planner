@@ -79,6 +79,9 @@ const view = new MapView(mapEl, store, {
     store.edit((c) => { c.area.splice(i, 1); });
   },
   onSelectFlight(idx) { store.ui((s) => { s.sel = idx; }); },
+  onAirspaceProblem() {
+    toast("Could not load the FAA airspace outlines (needs internet). Check Aloft / B4UFLY instead.", 9000);
+  },
   onBasemapProblem(id) {
     toast(`The ${BASEMAPS.find((b) => b.id === id)?.label ?? "imagery"} is not loading. Try another source under “Map”, or check your connection.`, 9000);
   },

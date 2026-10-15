@@ -27,6 +27,7 @@ Area mode, with lanes turned 90° on alternate altitudes:
 
 ### Good to know
 
+- **Airport airspace.** The map outlines the controlled airspace that starts at the ground around Ann Arbor (ARB), Willow Run (YIP), Detroit City (DET) and Detroit Metro (DTW), labelled with its class and top. Class B is a solid blue line, Class C magenta, Class D dashed blue. The outlines come live from the FAA's own open data, so they need internet, and they are **for orientation only**: they do not show the higher layers, LAANC grid heights or temporary restrictions. Always check Aloft / B4UFLY and get LAANC approval where needed.
 - **Straight lines back to the pilot.** If the straight line between a pilot and the route would cross outside the zone, you get a warning. Set Skydio's **Backtrack** return mode.
 - **Obstacles.** Add towers and tall trees by clicking the map. The drone must stay below the obstacle's height plus 15 m, or outside its keep-out distance.
 - **Height above ground.** Tick *Check the true height above ground* to look up ground height from the U.S. Geological Survey. Ground lower than the launch spot raises the real height. The waypoints do not change.

@@ -17,7 +17,7 @@ export interface PanelActions {
   openPlanFile(file: File): void;
   importKmlFile(file: File): void;
   copyLink(): void;
-  setOverlay(name: "line" | "nodes" | "ticks" | "zone", on: boolean): void;
+  setOverlay(name: "line" | "nodes" | "airspace" | "ticks" | "zone", on: boolean): void;
   toggleTheme(): void;
   printCards(): void;
   basemapIds(): { id: string; label: string; note: string }[];
@@ -195,7 +195,7 @@ export function buildPanel(root: HTMLElement, store: Store, act: PanelActions): 
   const gKey = h("input", { id: "gkey", type: "password", autocomplete: "off", placeholder: "Google Maps API key" });
   const gMsg = h("p", { class: "hint", id: "gmsg" });
   const overlayBox = h("div", null,
-    ...([["line", "Skyway line"], ["ticks", "Kilometre marks"], ["nodes", "Airports"], ["zone", "Fly zone"]] as const).map(([k, label]) => {
+    ...([["line", "Skyway line"], ["ticks", "Kilometre marks"], ["nodes", "Airports"], ["airspace", "Airport airspace (FAA outlines, display only)"], ["zone", "Fly zone"]] as const).map(([k, label]) => {
       const i = id();
       const input = h("input", { id: i, type: "checkbox", checked: true });
       input.addEventListener("change", () => act.setOverlay(k, input.checked));

@@ -163,3 +163,5 @@ td.good { color: var(--pass); font-weight: 700; } td.bad { color: var(--fail); f
   .chart { background: #fff; border: 1px solid #999; }
   .chart .tick { fill: #333; }
 }
+
+.airspace-label { white-space: nowrap; transform: translate(-50%, -50%); font: 600 11px/1.2 system-ui, sans-serif; text-align: center; color: #0b2545; background: rgb(255 255 255 / 0.85); padding: 1px 5px; border-radius: 4px; pointer-events: none; }

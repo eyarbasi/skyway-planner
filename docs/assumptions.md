@@ -90,7 +90,7 @@ The same saved plan always gives byte-identical waypoints: no randomness, stable
 
 ## Airspace
 
-Display only. Airport markers (ARB, YIP, DTW) use approximate positions copied from the prototype, and each has the tooltip "Check airspace in Aloft / B4UFLY". The app does not compute airspace, LAANC eligibility or any boundary.
+Display only. Airport markers (ARB, YIP, DTW) use approximate positions copied from the prototype, and each has the tooltip "Check airspace in Aloft / B4UFLY". The app does not compute airspace or LAANC eligibility. The airspace outlines on the map are fetched live from the FAA's official open-data "Class Airspace" service (surface areas of Class B, C and D only, US three-letter identifiers only) and are drawn as-is; nothing is stored or bundled, so they are as current as the FAA's copy. Not shown: higher shelves, LAANC facility-map ceilings, TFRs, restricted areas. If the service is unreachable the app says so.
 
 ## Differences from the Python reference (`wpplan`) and the HTML prototype
 
