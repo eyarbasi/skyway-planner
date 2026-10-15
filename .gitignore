@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-single
+test-results
+playwright-report
+*.tsbuildinfo
+.DS_Store
+
+# Source material from the team: kept local, not published (contains partner / pipeline details)
+reference/

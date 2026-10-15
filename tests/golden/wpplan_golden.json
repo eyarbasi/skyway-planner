@@ -1,0 +1,747 @@
+{
+ "skyway_km0_1.5": {
+  "over": {},
+  "n": 3,
+  "total_min": 47.46029420724978,
+  "path_km": 8.939999978489467,
+  "center_len": 1490.0000000006528,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1",
+   "Placeholder pilot 2",
+   "Placeholder pilot 3"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 42,
+    "min": 15.688891666671008,
+    "path_m": 2979.999996331628,
+    "edge_margin": 5.000000000093391,
+    "max_vlos": 248.33333333327593,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 2",
+    "wps": 48,
+    "min": 15.883720143617712,
+    "path_m": 2979.999987151703,
+    "edge_margin": 14.975917039195531,
+    "max_vlos": 248.33333333344942,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 3",
+    "wps": 48,
+    "min": 15.88768239696106,
+    "path_m": 2979.9999950061374,
+    "edge_margin": 5.000000000009016,
+    "max_vlos": 248.15194287690295,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_km4_1.5": {
+  "over": {
+   "segment": {
+    "start_km": 4.0,
+    "length_m": 1500
+   }
+  },
+  "n": 3,
+  "total_min": 47.36459316673008,
+  "path_km": 8.939999983781417,
+  "center_len": 1489.9999999987574,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1",
+   "Placeholder pilot 2",
+   "Placeholder pilot 3"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 43,
+    "min": 15.722224999987809,
+    "path_m": 2979.9999949549083,
+    "edge_margin": 4.999999999879034,
+    "max_vlos": 248.33333333321286,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 2",
+    "wps": 43,
+    "min": 15.721682050223786,
+    "path_m": 2979.9999993166775,
+    "edge_margin": 14.994673344311497,
+    "max_vlos": 248.33333333338575,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 3",
+    "wps": 49,
+    "min": 15.920686116518487,
+    "path_m": 2979.9999895098326,
+    "edge_margin": 4.999999999777879,
+    "max_vlos": 248.1025008122572,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_km20_3000": {
+  "over": {
+   "segment": {
+    "start_km": 20.0,
+    "length_m": 3000
+   },
+   "auto_stations_spacing_m": 600
+  },
+  "n": 5,
+  "total_min": 93.03333333333089,
+  "path_km": 17.939999999999273,
+  "center_len": 2989.999999999888,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1",
+   "Placeholder pilot 2",
+   "Placeholder pilot 3",
+   "Placeholder pilot 4",
+   "Placeholder pilot 5"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 43,
+    "min": 18.593333333332744,
+    "path_m": 3587.9999999996467,
+    "edge_margin": 4.999999999890731,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 2",
+    "wps": 44,
+    "min": 18.626666666666743,
+    "path_m": 3588.000000000023,
+    "edge_margin": 14.999999998772385,
+    "max_vlos": 299.0000000000019,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 3",
+    "wps": 43,
+    "min": 18.593333333331948,
+    "path_m": 3587.9999999996467,
+    "edge_margin": 14.999999998944174,
+    "max_vlos": 299.0000000000019,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 4",
+    "wps": 44,
+    "min": 18.626666666667884,
+    "path_m": 3588.000000000309,
+    "edge_margin": 14.999999998900286,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 5",
+    "wps": 43,
+    "min": 18.593333333331564,
+    "path_m": 3587.9999999996467,
+    "edge_margin": 4.999999999890731,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_km40_1200_one_pilot": {
+  "over": {
+   "segment": {
+    "start_km": 40.0,
+    "length_m": 1200
+   },
+   "auto_stations_spacing_m": 5000
+  },
+  "n": 2,
+  "total_min": 37.66587946195486,
+  "path_km": 7.139999999291874,
+  "center_len": 1190.0000000004688,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 54,
+    "min": 21.81587946195302,
+    "path_m": 4567.381919293621,
+    "edge_margin": 4.999999999748942,
+    "max_vlos": 595.0000000002702,
+    "max_agl": 90.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 31,
+    "min": 15.85000000000184,
+    "path_m": 2572.618079998253,
+    "edge_margin": 4.999999999748942,
+    "max_vlos": 595.0000000002702,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_one_pilot_too_far_raises": {
+  "raises": true
+ },
+ "corridor_example": {
+  "over": {},
+  "n": 3,
+  "total_min": 45.634020596114595,
+  "path_km": 8.04297636023125,
+  "center_len": 1608.6757833435108,
+  "inset": 5.0,
+  "stations": [
+   "Pilot 1",
+   "Pilot 2",
+   "Pilot 3"
+  ],
+  "sorties": [
+   {
+    "station": "Pilot 1",
+    "wps": 41,
+    "min": 14.80834808323834,
+    "path_m": 2601.776169817909,
+    "edge_margin": 4.9999999999985585,
+    "max_vlos": 275.45072985548313,
+    "max_agl": 120.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 2",
+    "wps": 46,
+    "min": 15.75344845754534,
+    "path_m": 2755.1081918213085,
+    "edge_margin": 14.232988508721496,
+    "max_vlos": 275.3519853957447,
+    "max_agl": 120.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 3",
+    "wps": 36,
+    "min": 15.072224055330917,
+    "path_m": 2686.091998592033,
+    "edge_margin": 4.9999999999979625,
+    "max_vlos": 275.42856391106903,
+    "max_agl": 120.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "corridor_8min": {
+  "over": {
+   "sortie_max_min": 8,
+   "section_by_station": false
+  },
+  "n": 9,
+  "total_min": 63.32051301371697,
+  "path_km": 8.042888602195692,
+  "center_len": 1608.6757833435108,
+  "inset": 5.0,
+  "stations": [
+   "Pilot 1",
+   "Pilot 2",
+   "Pilot 3"
+  ],
+  "sorties": [
+   {
+    "station": "Pilot 1",
+    "wps": 13,
+    "min": 7.015182762970706,
+    "path_m": 918.4495525264051,
+    "edge_margin": 4.9999999999985585,
+    "max_vlos": 671.468451451233,
+    "max_agl": 30.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 3",
+    "wps": 16,
+    "min": 7.8806609568709245,
+    "path_m": 1218.9905473134372,
+    "edge_margin": 4.9999999999979625,
+    "max_vlos": 428.15838387505016,
+    "max_agl": 60.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 2",
+    "wps": 13,
+    "min": 7.588229148524899,
+    "path_m": 929.4061503895866,
+    "edge_margin": 13.75705466419884,
+    "max_vlos": 643.7405987118165,
+    "max_agl": 60.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 1",
+    "wps": 15,
+    "min": 7.610486285546753,
+    "path_m": 997.6274854390585,
+    "edge_margin": 4.9999999999985585,
+    "max_vlos": 600.951244191833,
+    "max_agl": 90.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 3",
+    "wps": 14,
+    "min": 7.524628972669578,
+    "path_m": 1019.7045927503652,
+    "edge_margin": 4.9999999999979625,
+    "max_vlos": 499.19393885733365,
+    "max_agl": 120.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 2",
+    "wps": 11,
+    "min": 7.627631233013847,
+    "path_m": 794.5598934042962,
+    "edge_margin": 13.62306201539629,
+    "max_vlos": 553.4711282081232,
+    "max_agl": 120.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 1",
+    "wps": 15,
+    "min": 7.621565101395323,
+    "path_m": 955.527907352661,
+    "edge_margin": 4.9999999999985585,
+    "max_vlos": 310.5508451064486,
+    "max_agl": 120.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 2",
+    "wps": 13,
+    "min": 6.812426496038061,
+    "path_m": 799.9545311352006,
+    "edge_margin": 13.947041435015812,
+    "max_vlos": 403.4216404900218,
+    "max_agl": 120.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot 3",
+    "wps": 7,
+    "min": 3.6397020566868745,
+    "path_m": 408.6679418846805,
+    "edge_margin": 4.9999999999979625,
+    "max_vlos": 262.13905425916187,
+    "max_agl": 120.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "area_example": {
+  "over": {},
+  "n": 2,
+  "total_min": 35.663569625940916,
+  "path_km": 6.534793535322175,
+  "center_len": null,
+  "inset": 10.0,
+  "stations": [
+   "Pilot"
+  ],
+  "sorties": [
+   {
+    "station": "Pilot",
+    "wps": 52,
+    "min": 21.793901893170137,
+    "path_m": 3858.758978491357,
+    "edge_margin": 9.999999999070281,
+    "max_vlos": 421.4591183422549,
+    "max_agl": 120.0,
+    "issues": 0
+   },
+   {
+    "station": "Pilot",
+    "wps": 35,
+    "min": 13.869667732770777,
+    "path_m": 2676.0345568308176,
+    "edge_margin": 9.999999999070281,
+    "max_vlos": 421.4591183422549,
+    "max_agl": 120.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_km0_1.5_linear_only": {
+  "over": {
+   "segments": [
+    {
+     "pattern": "corridor_linear",
+     "altitudes": [
+      12,
+      30,
+      60,
+      90,
+      115
+     ],
+     "speed": 5
+    }
+   ]
+  },
+  "n": 3,
+  "total_min": 39.27418394343963,
+  "path_km": 7.450000000003263,
+  "center_len": 1490.0000000006528,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1",
+   "Placeholder pilot 2",
+   "Placeholder pilot 3"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 35,
+    "min": 12.981371916649898,
+    "path_m": 2483.3333333347505,
+    "edge_margin": 5.000000000093391,
+    "max_vlos": 248.33333333327593,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 2",
+    "wps": 40,
+    "min": 13.14741423847702,
+    "path_m": 2483.333333334002,
+    "edge_margin": 14.975917039195531,
+    "max_vlos": 248.33333333344942,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 3",
+    "wps": 40,
+    "min": 13.145397788312708,
+    "path_m": 2483.3333333345113,
+    "edge_margin": 5.000000000009016,
+    "max_vlos": 248.15194287690295,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_km0_1.5_porpoise_only": {
+  "over": {
+   "segments": [
+    {
+     "pattern": "corridor_porpoise",
+     "z_min": 15,
+     "z_max": 115,
+     "half_len_m": 200,
+     "speed": 5
+    }
+   ]
+  },
+  "n": 3,
+  "total_min": 13.790858943428749,
+  "path_km": 1.4899999840428297,
+  "center_len": 1490.0000000006528,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1",
+   "Placeholder pilot 2",
+   "Placeholder pilot 3"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 7,
+    "min": 4.575819138867394,
+    "path_m": 496.66666615254246,
+    "edge_margin": 5.000000000093391,
+    "max_vlos": 248.33333333327593,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 2",
+    "wps": 8,
+    "min": 4.608528127363685,
+    "path_m": 496.66666284501,
+    "edge_margin": 14.975921479734106,
+    "max_vlos": 248.33333333344942,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 3",
+    "wps": 8,
+    "min": 4.60651167719767,
+    "path_m": 496.6666550452773,
+    "edge_margin": 5.000000000009016,
+    "max_vlos": 248.15194287690295,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_km20_3000_linear_only": {
+  "over": {
+   "segment": {
+    "start_km": 20.0,
+    "length_m": 3000
+   },
+   "auto_stations_spacing_m": 600,
+   "segments": [
+    {
+     "pattern": "corridor_linear",
+     "altitudes": [
+      12,
+      30,
+      60,
+      90,
+      115
+     ],
+     "speed": 5
+    }
+   ]
+  },
+  "n": 5,
+  "total_min": 75.04999999999778,
+  "path_km": 14.949999999999442,
+  "center_len": 2989.999999999888,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1",
+   "Placeholder pilot 2",
+   "Placeholder pilot 3",
+   "Placeholder pilot 4",
+   "Placeholder pilot 5"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 35,
+    "min": 15.009999999998824,
+    "path_m": 2989.999999999706,
+    "edge_margin": 4.999999999890731,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 2",
+    "wps": 35,
+    "min": 15.010000000000083,
+    "path_m": 2990.000000000019,
+    "edge_margin": 14.999999999067224,
+    "max_vlos": 299.0000000000019,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 3",
+    "wps": 35,
+    "min": 15.009999999998826,
+    "path_m": 2989.999999999706,
+    "edge_margin": 14.999999999069244,
+    "max_vlos": 299.0000000000019,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 4",
+    "wps": 35,
+    "min": 15.010000000001224,
+    "path_m": 2990.0000000003047,
+    "edge_margin": 14.999999999068233,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 5",
+    "wps": 35,
+    "min": 15.009999999998824,
+    "path_m": 2989.999999999706,
+    "edge_margin": 4.999999999890731,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_km20_3000_porpoise_only": {
+  "over": {
+   "segment": {
+    "start_km": 20.0,
+    "length_m": 3000
+   },
+   "auto_stations_spacing_m": 600,
+   "segments": [
+    {
+     "pattern": "corridor_porpoise",
+     "z_min": 15,
+     "z_max": 115,
+     "half_len_m": 200,
+     "speed": 5
+    }
+   ]
+  },
+  "n": 5,
+  "total_min": 29.033333333332767,
+  "path_km": 2.989999999999831,
+  "center_len": 2989.999999999888,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1",
+   "Placeholder pilot 2",
+   "Placeholder pilot 3",
+   "Placeholder pilot 4",
+   "Placeholder pilot 5"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 8,
+    "min": 5.793333333333137,
+    "path_m": 597.9999999999411,
+    "edge_margin": 4.999999999890731,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 2",
+    "wps": 9,
+    "min": 5.826666666666679,
+    "path_m": 598.0000000000038,
+    "edge_margin": 14.999999998900286,
+    "max_vlos": 299.0000000000019,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 3",
+    "wps": 8,
+    "min": 5.793333333333137,
+    "path_m": 597.9999999999411,
+    "edge_margin": 14.999999998955234,
+    "max_vlos": 299.0000000000019,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 4",
+    "wps": 9,
+    "min": 5.826666666666679,
+    "path_m": 598.0000000000038,
+    "edge_margin": 14.999999998761362,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 5",
+    "wps": 8,
+    "min": 5.793333333333137,
+    "path_m": 597.9999999999411,
+    "edge_margin": 4.999999999890731,
+    "max_vlos": 299.000000000059,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ },
+ "skyway_km0_1.5_columns_only": {
+  "over": {
+   "segments": [
+    {
+     "pattern": "corridor_columns",
+     "z_min": 15,
+     "z_max": 115,
+     "station_spacing_m": 250,
+     "speed": 5
+    }
+   ]
+  },
+  "n": 3,
+  "total_min": 11.313476270287754,
+  "path_km": 0.7500000000002531,
+  "center_len": 1490.0000000006528,
+  "inset": 5.0,
+  "stations": [
+   "Placeholder pilot 1",
+   "Placeholder pilot 2",
+   "Placeholder pilot 3"
+  ],
+  "sorties": [
+   {
+    "station": "Placeholder pilot 1",
+    "wps": 6,
+    "min": 3.7500000000012252,
+    "path_m": 250.00000000018377,
+    "edge_margin": 5.000000000093391,
+    "max_vlos": 248.33333333327593,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 2",
+    "wps": 7,
+    "min": 3.7807475718077703,
+    "path_m": 250.0000000000129,
+    "edge_margin": 14.975917039195531,
+    "max_vlos": 247.55760487565624,
+    "max_agl": 115.0,
+    "issues": 0
+   },
+   {
+    "station": "Placeholder pilot 3",
+    "wps": 7,
+    "min": 3.7827286984787585,
+    "path_m": 250.0000000000565,
+    "edge_margin": 14.979601815028461,
+    "max_vlos": 248.15194287690295,
+    "max_agl": 115.0,
+    "issues": 0
+   }
+  ],
+  "pass": true
+ }
+}
